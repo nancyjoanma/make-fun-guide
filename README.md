@@ -22,6 +22,7 @@ This repository is a guide, not a program — reading it is the whole point. Sta
 
 - [Quick start](#quick-start)
 - [What make.fun actually is](#what-makefun-actually-is)
+- [A worked example: your first evening](#a-worked-example-your-first-evening)
 - [What you need before you start](#what-you-need-before-you-start)
 - [Step 1 — Make your account](#step-1--make-your-account)
 - [Step 2 — Pick your first bounty](#step-2--pick-your-first-bounty)
@@ -66,6 +67,21 @@ Three facts that matter before you spend an evening on this:
 - **The prize is locked up front.** When a bounty opens, its whole reward sits in an on-chain escrow on Solana. Nobody can move it or promise it away. The escrow program is public at [github.com/makedotfun/prize-escrow](https://github.com/makedotfun/prize-escrow).
 - **Most bounties cost nothing to enter.** A bounty with an entry fee says so on its page, and the fee goes into that bounty's prize pool. If a bounty asks you to buy credits, tokens, or a coin to enter, that is part of its stated rules — read them first.
 - **Your agent's session logs are part of the entry.** make.fun checks them to confirm your own agent built the work. That is the anti-cheating system, and it is also why the rules in step 4 below exist.
+
+### How scoring works
+
+Each bounty publishes how it is scored, and the grader runs every entry the same way — usually twice, in a sandbox, so a lucky run does not win. An exact tie goes to the earlier entry, so submitting a good entry early beats submitting a slightly better one late. Some bounties pay only the top few places; others pay dozens. The bounty page's prize split tells you which kind you are entering, and it is worth reading before you choose: a bounty that pays 50 places rewards a solid, finished entry, while a winner-takes-most bounty rewards taking a risk on something ambitious.
+
+## A worked example: your first evening
+
+Here is what a first entry can look like, hour by hour, on a bounty with a one-week deadline:
+
+- **Minute 0–15:** Sign up, link GitHub and your wallet, pick a bounty whose task you understand in one reading.
+- **Minute 15–30:** Download the kit, read `RULES.txt`, run the local grade on the starter if there is one, so you see the scoring before you build.
+- **Minute 30–120:** Your agent builds in a fresh session. You steer: read what it does, answer its questions, run the local grade again.
+- **Minute 120–150:** Bundle the transcripts, run `check`, fix what it flags, submit. If a check fails, fix it and submit the new commit — that is normal, not a disaster.
+
+The whole loop fits in one evening for a small bounty. The second bounty goes faster, because the account, the wallet, and the kit commands are already set up.
 
 ## What you need before you start
 
@@ -145,6 +161,15 @@ Before you enter, run the site's own checks on your machine. A rejected entry st
 node cli/makefun.mjs check --kit . --repo ../my-entry --transcripts transcripts.tar.gz
 ```
 
+### If the kit stops you
+
+| What you see | What it means | What to do |
+|---|---|---|
+| `login` stops waiting before you approve | The approval link expires after a while | Run the same `login` command again and approve faster |
+| `bundle` writes nothing and names a flag | A part of the run record is missing | Add the flag it names (often `--system-prompt` or `--effort`) and run it again |
+| `check` fails on the transcripts | The sessions do not account for the code | Build and revise in the same session, in the repository, and bundle again |
+| `submit` is refused with a 422 | A required check failed at the server | Read the reason, fix it in a new commit, and submit the new commit |
+
 Then enter, either from the **Enter** form on the bounty page (paste your repository link and commit, upload the bundle) or from the kit:
 
 ```sh
@@ -179,6 +204,8 @@ node cli/makefun.mjs claim --claim <claim-id> \
 ## Earn with referrals
 
 Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<code>` on any make.fun page works too. You earn USDC when people sign up through it and take part, plus a share of what they win for a while after they sign up — make.fun pays that share on top, so their own prize stays whole. Your link, what each reward is worth right now, and everything you have earned are on the **Referrals** tab of your profile. Every reward is reviewed for at least a day before you can claim it, and only real new accounts that take part count.
+
+A referral link earns nothing sitting in a drawer. It works when it reaches people who would actually build: a guide like this one, a post in a community where people already use AI coding agents, or a direct message to a friend who has been curious about bounties. Tell them what make.fun is first and let the link be the way in — people sign up for the bounties, not for the link.
 
 If this guide helped, signing up through [my link](https://make.fun/r/gft6q872) (code `gft6q872`) is a nice way to say thanks.
 
