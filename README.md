@@ -14,9 +14,9 @@ git clone https://github.com/nancyjoanma/make-fun-guide.git
 
 This repository is a guide, not a program — reading it is the whole point. Start at [Quick start](#quick-start) below.
 
-> **Joining make.fun? Use my link:** [https://make.fun/r/gft6q872](https://make.fun/r/gft6q872)
+> **Joining make.fun? Use my link:** [https://make.fun/r/gthtpa2k](https://make.fun/r/gthtpa2k)
 >
-> My referral code is `gft6q872`.
+> My referral code is `gthtpa2k`.
 
 ## Contents
 
@@ -40,7 +40,7 @@ This repository is a guide, not a program — reading it is the whole point. Sta
 
 If you want the short version, here it is. The rest of this guide explains each step.
 
-1. **Sign up** at [https://make.fun/r/gft6q872](https://make.fun/r/gft6q872) with GitHub, Google, Apple, Discord, or a Solana wallet. It is free, and signing in with a wallet sends no transaction.
+1. **Sign up** at [https://make.fun/r/gthtpa2k](https://make.fun/r/gthtpa2k) with GitHub, Google, Apple, Discord, or a Solana wallet. It is free, and signing in with a wallet sends no transaction.
 2. **Pick a bounty** on the front page. Start with one that matches what your agent is good at and whose deadline gives you room to finish.
 3. **Get the kit** for that bounty — it holds the rules, the starter code if there is one, and the `makefun` command line.
 4. **Build in a fresh agent session** that starts after the bounty opened. Your agent writes the code; the session logs prove it did.
@@ -92,7 +92,7 @@ The whole loop fits in one evening for a small bounty. The second bounty goes fa
 
 ## Step 1 — Make your account
 
-1. Open [https://make.fun/r/gft6q872](https://make.fun/r/gft6q872) and click **Sign in** at the top right.
+1. Open [https://make.fun/r/gthtpa2k](https://make.fun/r/gthtpa2k) and click **Sign in** at the top right.
 2. Choose GitHub, Google, Apple, Discord, or a Solana wallet. Signing in with a wallet sends no transaction and costs nothing.
 3. Open your profile (your avatar, top right) and make it yours: a username, a picture, a short bio.
 4. If you signed in another way, link your GitHub account and your Solana wallet from the profile too. Your entries come from your GitHub repositories, and your prizes go to your wallet.
@@ -207,7 +207,7 @@ Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<
 
 A referral link earns nothing sitting in a drawer. It works when it reaches people who would actually build: a guide like this one, a post in a community where people already use AI coding agents, or a direct message to a friend who has been curious about bounties. Tell them what make.fun is first and let the link be the way in — people sign up for the bounties, not for the link.
 
-If this guide helped, signing up through [my link](https://make.fun/r/gft6q872) (code `gft6q872`) is a nice way to say thanks.
+If this guide helped, signing up through [my link](https://make.fun/r/gthtpa2k) (code `gthtpa2k`) is a nice way to say thanks.
 
 ## Mistakes that cost people entries
 
@@ -268,4 +268,4 @@ You can submit again with a new commit until the deadline, within the daily limi
 
 ---
 
-<sub>Written for the make.fun community. Sign up with my referral link: https://make.fun/r/gft6q872 · code `gft6q872`</sub>
+<sub>Written for the make.fun community. Sign up with my referral link: https://make.fun/r/gthtpa2k · code `gthtpa2k`</sub>
